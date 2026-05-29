@@ -36,3 +36,34 @@ style.textContent = `
     }
 `;
 document.head.appendChild(style);
+
+// Projets associés aux compétences
+function showRelatedProjects(btn) {
+    const card = btn.closest('.competence-card');
+    const related = card.dataset.related.split(',').map(s => s.trim());
+
+    // Reset tous les projets
+    document.querySelectorAll('.project-card').forEach(p => {
+        p.classList.remove('project-highlight', 'project-dimmed');
+    });
+
+    // Highlight / dim
+    document.querySelectorAll('.project-card').forEach(p => {
+        if (related.includes(p.dataset.projectId)) {
+            p.classList.add('project-highlight');
+        } else {
+            p.classList.add('project-dimmed');
+        }
+    });
+
+    // Scroll vers la section projets
+    const section = document.querySelector('#projets');
+    section.scrollIntoView({ behavior: 'smooth' });
+
+    // Reset automatique après 3s
+    setTimeout(() => {
+        document.querySelectorAll('.project-card').forEach(p => {
+            p.classList.remove('project-highlight', 'project-dimmed');
+        });
+    }, 3000);
+}

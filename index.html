@@ -128,7 +128,7 @@
             <h2 class="section-title">Mes Projets</h2>
             <div class="projects-grid">
                 <!-- Projet Principal -->
-                <div class="project-card featured">
+                <div class="project-card featured" data-project-id="warmaster">
                     <div class="project-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
                     <div class="project-content">
                         <span class="project-badge featured-badge">Projet Principal</span>
@@ -156,7 +156,7 @@
                 </div>
 
                 <!-- Autres Projets -->
-                <div class="project-card">
+                <div class="project-card" data-project-id="siteweb">
                     <div class="project-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
                     <div class="project-content">
                         <span class="project-badge">Projet Personnel</span>
@@ -173,7 +173,7 @@
                     </div>
                 </div>
 
-                <div class="project-card">
+                <div class="project-card" data-project-id="sokoban">
                     <div class="project-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
                     <div class="project-content">
                         <span class="project-badge">Projet Personnel</span>
@@ -190,7 +190,7 @@
                     </div>
                 </div>
 
-                <div class="project-card">
+                <div class="project-card" data-project-id="24hcode">
                     <div class="project-image" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);"></div>
                     <div class="project-content">
                         <span class="project-badge">Compétition</span>
@@ -218,7 +218,7 @@
             
             <div class="competences-grid">
                 <!-- Compétence 1: Réaliser -->
-                <div class="competence-card">
+                <div class="competence-card" data-related="warmaster,sokoban,siteweb">
                     <div class="competence-icon">
                         <i class="fas fa-code"></i>
                     </div>
@@ -235,11 +235,12 @@
                         <div class="competence-bar">
                             <div class="competence-progress" style="width: 85%"></div>
                         </div>
+                        <button class="btn-related" onclick="showRelatedProjects(this)">Voir les projets associés ↗</button>
                     </div>
                 </div>
 
                 <!-- Compétence 2: Optimiser -->
-                <div class="competence-card">
+                <div class="competence-card" data-related="warmaster,sokoban">
                     <div class="competence-icon">
                         <i class="fas fa-brain"></i>
                     </div>
@@ -255,11 +256,12 @@
                         <div class="competence-bar">
                             <div class="competence-progress" style="width: 75%"></div>
                         </div>
+                        <button class="btn-related" onclick="showRelatedProjects(this)">Voir les projets associés ↗</button>
                     </div>
                 </div>
 
                 <!-- Compétence 3: Administrer -->
-                <div class="competence-card">
+                <div class="competence-card" data-related="warmaster">
                     <div class="competence-icon">
                         <i class="fas fa-server"></i>
                     </div>
@@ -276,11 +278,12 @@
                         <div class="competence-bar">
                             <div class="competence-progress" style="width: 70%"></div>
                         </div>
+                        <button class="btn-related" onclick="showRelatedProjects(this)">Voir les projets associés ↗</button>
                     </div>
                 </div>
 
                 <!-- Compétence 4: Gérer -->
-                <div class="competence-card">
+                <div class="competence-card" data-related="warmaster,sokoban,siteweb,24hcode">
                     <div class="competence-icon">
                         <i class="fas fa-database"></i>
                     </div>
@@ -296,11 +299,12 @@
                         <div class="competence-bar">
                             <div class="competence-progress" style="width: 78%"></div>
                         </div>
+                        <button class="btn-related" onclick="showRelatedProjects(this)">Voir les projets associés ↗</button>
                     </div>
                 </div>
 
                 <!-- Compétence 5: Conduire -->
-                <div class="competence-card">
+                <div class="competence-card" data-related="24hcode,siteweb">
                     <div class="competence-icon">
                         <i class="fas fa-chart-gantt"></i>
                     </div>
@@ -316,11 +320,12 @@
                         <div class="competence-bar">
                             <div class="competence-progress" style="width: 72%"></div>
                         </div>
+                        <button class="btn-related" onclick="showRelatedProjects(this)">Voir les projets associés ↗</button>
                     </div>
                 </div>
 
                 <!-- Compétence 6: Collaborer -->
-                <div class="competence-card">
+                <div class="competence-card" data-related="24hcode,siteweb">
                     <div class="competence-icon">
                         <i class="fas fa-people-arrows"></i>
                     </div>
@@ -332,11 +337,12 @@
                             <li>Écosystème numérique</li>
                             <li>Secteurs informatiques</li>
                             <li>Rôles et fonctions</li>
-                            <li>Compétences humaines</li>
+                            <li>Compétenceaas humaines</li>
                         </ul>
                         <div class="competence-bar">
                             <div class="competence-progress" style="width: 82%"></div>
                         </div>
+                        <button class="btn-related" onclick="showRelatedProjects(this)">Voir les projets associés ↗</button>
                     </div>
                 </div>
             </div>
