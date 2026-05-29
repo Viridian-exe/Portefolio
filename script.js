@@ -37,6 +37,24 @@ style.textContent = `
 `;
 document.head.appendChild(style);
 
+// Expand/collapse au clic sur une project-card (un seul à la fois)
+document.querySelectorAll('.project-card').forEach(card => {
+    card.addEventListener('click', function (e) {
+        // Ne pas déclencher si on clique sur un lien
+        if (e.target.closest('a')) return;
+
+        const isAlreadyExpanded = this.classList.contains('expanded');
+
+        // Fermer tous
+        document.querySelectorAll('.project-card').forEach(c => c.classList.remove('expanded'));
+
+        // Ouvrir celui-ci sauf s'il était déjà ouvert (toggle)
+        if (!isAlreadyExpanded) {
+            this.classList.add('expanded');
+        }
+    });
+});
+
 // Projets associés aux compétences
 function showRelatedProjects(btn) {
     const card = btn.closest('.competence-card');
@@ -44,7 +62,7 @@ function showRelatedProjects(btn) {
 
     // Reset tous les projets
     document.querySelectorAll('.project-card').forEach(p => {
-        p.classList.remove('project-highlight', 'project-dimmed');
+        p.classList.remove('project-highlight', 'project-dimmed', 'expanded');
     });
 
     // Highlight / dim

@@ -93,8 +93,8 @@
                 <div class="timeline-item">
                     <div class="timeline-marker">2022</div>
                     <div class="timeline-content">
-                        <h4>Début de prise en main java</h4>
-                        <p>Mes premiers pas avec java pour le projet Warmaster, j'ai appris a apprécier le java et l'informatique plus généralement. C'est le début d'une passion qui me suivra[...]</p>
+                        <h4>Début de prise en main Java</h4>
+                        <p>Mes premiers pas avec Java pour le projet Warmaster, j'ai appris à apprécier le Java et l'informatique plus généralement. C'est le début d'une passion qui me suivra longtemps.</p>
                     </div>
                 </div>
                 <div class="timeline-item">
@@ -108,7 +108,7 @@
                     <div class="timeline-marker">2025</div>
                     <div class="timeline-content">
                         <h4>BUT Informatique à l'IUT de Lannion</h4>
-                        <p>Début d'une formation en 3 ans combinant théorie et pratique. Apprentissage des bases de l'informatique, des langages de programmation et des méthodologies de dével[...]</p>
+                        <p>Début d'une formation en 3 ans combinant théorie et pratique. Apprentissage des bases de l'informatique, des langages de programmation et des méthodologies de développement.</p>
                     </div>
                 </div>
                 <div class="timeline-item">
@@ -128,30 +128,32 @@
             <h2 class="section-title">Mes Projets</h2>
             <div class="projects-grid">
                 <!-- Projet Principal -->
-                <div class="project-card featured" data-project-id="warmaster">
-                    <div class="project-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
+                <div class="project-card" data-project-id="warmaster">
+                    <div class="project-image" style="background-image: url('warmaster.png'); background-size: cover; background-position: center;"></div>
                     <div class="project-content">
                         <span class="project-badge featured-badge">Projet Principal</span>
                         <h3>Warmaster</h3>
                         <p>
-                            Un serveur Minecraft complet développé en Java. Ce projet m'a permis d'approfondir ma compréhension 
-                            de Java, des sockets réseau, de l'architecture logicielle et de la gestion des données.
+                            Plugin Minecraft développé en Java pour un serveur Paper 1.21. Ce projet est au cœur de mon apprentissage : il m'a amené à travailler avec des APIs tierces comme Paper API et PacketEvents, à adapter le code à chaque nouvelle version du jeu, et à migrer d'un système de build Maven vers Gradle au fil des itérations.
                         </p>
-                        <div class="project-details">
-                            <div class="detail">
-                                <strong>Stack:</strong> Java, Architecture MVC
+                        <div class="project-expandable">
+                            <div class="project-details">
+                                <div class="detail">
+                                    <strong>Stack :</strong> Java 21, Paper API, PacketEvents, Gradle
+                                </div>
+                                <div class="detail">
+                                    <strong>Apprentissages :</strong> Intégration d'APIs, adaptation aux mises à jour, migration Maven → Gradle
+                                </div>
                             </div>
-                            <div class="detail">
-                                <strong>Apprentissages:</strong> Sockets, Multithreading, Gestion mémoire
+                            <div class="project-tags">
+                                <span class="tag">Java</span>
+                                <span class="tag">Paper API</span>
+                                <span class="tag">PacketEvents</span>
+                                <span class="tag">Gradle</span>
+                                <span class="tag">Minecraft</span>
                             </div>
+                            <a href="https://github.com/Viridian-exe/Warmaster" class="project-link">Voir sur GitHub →</a>
                         </div>
-                        <div class="project-tags">
-                            <span class="tag">Java</span>
-                            <span class="tag">Minecraft</span>
-                            <span class="tag">Serveur</span>
-                            <span class="tag">Gestion de projet</span>
-                        </div>
-                        <a href="https://github.com/Viridian-exe" class="project-link">Voir sur GitHub →</a>
                     </div>
                 </div>
 
@@ -164,12 +166,18 @@
                         <p>
                             Création d'un site web sur l'Irlande en equipe 
                         </p>
-                        <div class="project-tags">
-                            <span class="tag">HTML/CSS</span>
-                            <span class="tag">Apprentissage</span>
-                            <span class="tag">Travail d'equipe</span>
+                        <div class="project-expandable">
+                            <div class="project-details">
+                                <div class="detail"><strong>Stack:</strong> HTML, CSS</div>
+                                <div class="detail"><strong>Apprentissages:</strong> Intégration web, travail collaboratif</div>
+                            </div>
+                            <div class="project-tags">
+                                <span class="tag">HTML/CSS</span>
+                                <span class="tag">Apprentissage</span>
+                                <span class="tag">Travail d'equipe</span>
+                            </div>
+                            <a href="#" class="project-link">En savoir plus →</a>
                         </div>
-                        <a href="#" class="project-link">En savoir plus →</a>
                     </div>
                 </div>
 
@@ -181,12 +189,18 @@
                         <p>
                             création d'un sokoban lors d'un projet étudiant
                         </p>
-                        <div class="project-tags">
-                            <span class="tag">langage C</span>
-                            <span class="tag">Dev</span>
-                            <span class="tag">Apprentissage</span>
+                        <div class="project-expandable">
+                            <div class="project-details">
+                                <div class="detail"><strong>Stack:</strong> Langage C</div>
+                                <div class="detail"><strong>Apprentissages:</strong> Algorithmique, gestion mémoire</div>
+                            </div>
+                            <div class="project-tags">
+                                <span class="tag">langage C</span>
+                                <span class="tag">Dev</span>
+                                <span class="tag">Apprentissage</span>
+                            </div>
+                            <a href="#" class="project-link">Voir le projet →</a>
                         </div>
-                        <a href="#" class="project-link">Voir le projet →</a>
                     </div>
                 </div>
 
@@ -199,11 +213,17 @@
                             Participation à ce marathon de programmation. Développement rapide d'une solution sous contrainte de temps. 
                             Expérience valorisante en gestion de projet et travail en équipe.
                         </p>
-                        <div class="project-tags">
-                            <span class="tag">Hackathon</span>
-                            <span class="tag">Travail d'equipe</span>
+                        <div class="project-expandable">
+                            <div class="project-details">
+                                <div class="detail"><strong>Format:</strong> Marathon 24h en équipe</div>
+                                <div class="detail"><strong>Apprentissages:</strong> Gestion du stress, rapidité d'exécution</div>
+                            </div>
+                            <div class="project-tags">
+                                <span class="tag">Hackathon</span>
+                                <span class="tag">Travail d'equipe</span>
+                            </div>
+                            <a href="#" class="project-link">Détails →</a>
                         </div>
-                        <a href="#" class="project-link">Détails →</a>
                     </div>
                 </div>
             </div>
@@ -337,7 +357,7 @@
                             <li>Écosystème numérique</li>
                             <li>Secteurs informatiques</li>
                             <li>Rôles et fonctions</li>
-                            <li>Compétenceaas humaines</li>
+                            <li>Compétences humaines</li>
                         </ul>
                         <div class="competence-bar">
                             <div class="competence-progress" style="width: 82%"></div>
